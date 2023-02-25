@@ -1,15 +1,16 @@
 import React from "react";
 import farmerIcon from "../img/farmerIcon.png";
-// import HeroBg from "../img/heroBg.png";
+import CountUp from "react-countup";
+import HeroBg from "../img/bg2.jpg";
 import { heroData } from "../data";
-
+import "./homeContainer.css";
 const HomeContainer = () => {
   return (
     <section
-      className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full "
+      className="w-auto m-5 md:m-12 grid grid-cols-1 md:grid-cols-5 gap-12 xl:gap-y-24 xl:gap-x-12 md:gap-0 box-border"
       id="home"
     >
-      <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6">
+      <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6 md:col-span-2">
         <div className="flex items-center gap-2 justify-center bg-orange-100 px-4 py-1 rounded-full">
           <p className="text-base text-orange-500 font-semibold">
             Best in Quality
@@ -24,17 +25,38 @@ const HomeContainer = () => {
         </div>
 
         <p className="text-[2.5rem] lg:text-[4rem] font-bold tracking-wide text-headingColor">
-          A Basket Full Of
-          <br />
+          A Basket Full Of {/* <br /> */}
           <span className="text-textColorYellow text-[3rem] lg:text-[4rem]">
             Mango Love
           </span>
         </p>
 
-        <p className="text-base text-textColor text-center md:text-left md:w-[80%]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima velit
-          eaque fugit distinctio est nam voluptatum architecto, porro iusto
-        </p>
+        <div className="w-full flex gap-4">
+          <div className="flex flex-col justify-center items-center ">
+            <span className="font-bold text-3xl text-textColorYellow">
+              <CountUp end={100} start={90} duration={5} delay={0} suffix="+" />
+            </span>
+            <span>Farmers</span>
+          </div>
+          <div className="flex flex-col justify-center items-center ">
+            <span className="font-bold text-3xl text-textColorYellow">
+              <CountUp
+                end={10}
+                start={0}
+                duration={5}
+                delay={0}
+                suffix="Lakh+"
+              />
+            </span>
+            <span>Mangos Sold</span>
+          </div>
+          <div className="flex flex-col justify-center items-center ">
+            <span className="font-bold text-3xl text-textColorYellow">
+              <CountUp end={10} start={0} duration={5} delay={0} suffix="k+" />
+            </span>
+            <span>Costumers</span>
+          </div>
+        </div>
 
         <button
           type="button"
@@ -43,19 +65,20 @@ const HomeContainer = () => {
           Order Now
         </button>
       </div>
-      <div className="py-2 flex-1 flex items-center relative">
+
+      <div className="py-2 flex-1 flex items-center md:col-span-3 md:m-12">
         {/* <img
           src={HeroBg}
           className=" ml-auto h-420 w-full lg:w-auto lg:h-650"
           alt="hero-bg"
         /> */}
 
-        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-16 flex-wrap">
+        <div className="md:16 w-full h-full top-0 left-0 flex items-center justify-center  gap-8 md:gap-16 flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <div
                 key={n.id}
-                className="  lg:w-190  p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg border-solid border-2 border-textColorYellow"
+                className="md:w-100  lg:w-160  p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg border-solid border-2 border-textColorYellow"
               >
                 <img
                   src={n.imageSrc}
@@ -65,10 +88,6 @@ const HomeContainer = () => {
                 <p className="text-base lg:text-xl font-semibold text-textColor mt-2 lg:mt-4">
                   {n.name}
                 </p>
-
-                {/* <p className="text-[12px] lg:text-sm text-lighttextGray font-semibold my-1 lg:my-3">
-                  {n.decp}
-                </p> */}
 
                 <p className="text-sm font-semibold text-headingColor">
                   <span className="text-xs text-red-600">₹</span> {n.price}
