@@ -1,5 +1,7 @@
+import Features from "./components/Features";
 import HomeContainer from "./components/HomeContainer";
 import Navbar from "./components/Navbar";
+import Products from "./components/Products";
 
 function App() {
   return (
@@ -7,6 +9,8 @@ function App() {
       <Navbar />
 
       <HomeContainer />
+      <Features />
+      <Products />
     </div>
   );
 }

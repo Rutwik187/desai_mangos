@@ -1,13 +1,11 @@
 import React from "react";
 import farmerIcon from "../img/farmerIcon.png";
 import CountUp from "react-countup";
-import HeroBg from "../img/bg2.jpg";
 import { heroData } from "../data";
-import "./homeContainer.css";
 const HomeContainer = () => {
   return (
     <section
-      className="w-auto m-5 md:m-12 grid grid-cols-1 md:grid-cols-5 gap-12 xl:gap-y-24 xl:gap-x-12 md:gap-0 box-border"
+      className="w-auto m-5 md:m-12 grid grid-cols-1 md:grid-cols-5 gap-12 xl:gap-y-24 xl:gap-x-12 md:gap-0 "
       id="home"
     >
       <div className="py-2 flex-1 flex flex-col items-start justify-center gap-6 md:col-span-2">
@@ -33,13 +31,13 @@ const HomeContainer = () => {
 
         <div className="w-full flex gap-4">
           <div className="flex flex-col justify-center items-center ">
-            <span className="font-bold text-3xl text-textColorYellow">
+            <span className="font-bold text-3xl lg:text-4xl text-textColorYellow">
               <CountUp end={100} start={90} duration={5} delay={0} suffix="+" />
             </span>
-            <span>Farmers</span>
+            <span className="lg:text-xl">Farmers</span>
           </div>
           <div className="flex flex-col justify-center items-center ">
-            <span className="font-bold text-3xl text-textColorYellow">
+            <span className="font-bold text-3xl lg:text-4xl text-textColorYellow">
               <CountUp
                 end={10}
                 start={0}
@@ -48,13 +46,13 @@ const HomeContainer = () => {
                 suffix="Lakh+"
               />
             </span>
-            <span>Mangos Sold</span>
+            <span className="lg:text-xl">Mangos Sold</span>
           </div>
           <div className="flex flex-col justify-center items-center ">
-            <span className="font-bold text-3xl text-textColorYellow">
+            <span className="font-bold text-3xl lg:text-4xl text-textColorYellow">
               <CountUp end={10} start={0} duration={5} delay={0} suffix="k+" />
             </span>
-            <span>Costumers</span>
+            <span className="lg:text-xl">Costumers</span>
           </div>
         </div>
 
@@ -73,12 +71,12 @@ const HomeContainer = () => {
           alt="hero-bg"
         /> */}
 
-        <div className="md:16 w-full h-full top-0 left-0 flex items-center justify-center  gap-8 md:gap-16 flex-wrap">
+        <div className="md:16 w-full h-full top-0 left-0 flex items-center justify-center  gap-8 md:gap-12 xl:gap-24 flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <div
                 key={n.id}
-                className="md:w-100  lg:w-160  p-4 bg-cardOverlay backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg border-solid border-2 border-textColorYellow"
+                className="md:w-100  lg:w-160  p-4 bg-white backdrop-blur-md rounded-3xl flex flex-col items-center justify-center drop-shadow-lg border-solid border-2 border-textColorYellow"
               >
                 <img
                   src={n.imageSrc}
