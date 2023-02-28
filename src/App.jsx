@@ -1,4 +1,4 @@
-import Banners from "./components/banners";
+// import Banners from "./components/banners";
 import Features from "./components/Features";
 import HomeContainer from "./components/HomeContainer";
 import HomeProducts from "./components/HomeProducts";
