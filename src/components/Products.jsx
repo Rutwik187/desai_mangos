@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { productData } from "../data";
 import { MdShoppingBasket } from "react-icons/md";
 import { motion } from "framer-motion";
@@ -7,30 +7,19 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Products = () => {
-  const [slidesToShow, setSlidesToShow] = useState(4);
-
-  useEffect(() => {
-    if (window.innerWidth <= 450) {
-      setSlidesToShow(2);
-    } else if (window.innerWidth <= 900) {
-      setSlidesToShow(3);
-    } else {
-      setSlidesToShow(4);
-    }
-  }, []);
   const settings = {
     dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1400,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 2,
           infinite: true,
           dots: true,
         },
@@ -63,7 +52,7 @@ const Products = () => {
           {productData.map((item, index) => (
             <div
               key={index}
-              className="w-275 h-[175px]  md:w-300   bg-cardOverlay rounded-lg py-2 px-4  my-12  backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative"
+              className="min-w-250 h-[175px]  md:w-300   bg-cardOverlay rounded-lg py-2 px-4  my-6  backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative"
             >
               <div className="w-full flex items-center justify-between">
                 <motion.div

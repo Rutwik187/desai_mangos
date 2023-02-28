@@ -2,6 +2,7 @@ import React from "react";
 import farmerIcon from "../img/farmerIcon.png";
 import CountUp from "react-countup";
 import { heroData } from "../data";
+
 const HomeContainer = () => {
   return (
     <section
@@ -31,26 +32,32 @@ const HomeContainer = () => {
 
         <div className="w-full flex gap-4">
           <div className="flex flex-col justify-center items-center ">
-            <span className="font-bold text-3xl lg:text-4xl text-textColorYellow">
+            <span className="font-bold text-2xl md:text-3xl lg:text-4xl text-textColorYellow">
               <CountUp end={100} start={90} duration={5} delay={0} suffix="+" />
             </span>
             <span className="lg:text-xl">Farmers</span>
           </div>
           <div className="flex flex-col justify-center items-center ">
-            <span className="font-bold text-3xl lg:text-4xl text-textColorYellow">
+            <span className="font-bold text-2xl md:text-3xl lg:text-4xl text-textColorYellow">
               <CountUp
-                end={10}
-                start={0}
+                end={800000}
+                start={799900}
                 duration={5}
                 delay={0}
-                suffix="Lakh+"
+                suffix="+"
               />
             </span>
             <span className="lg:text-xl">Mangos Sold</span>
           </div>
           <div className="flex flex-col justify-center items-center ">
-            <span className="font-bold text-3xl lg:text-4xl text-textColorYellow">
-              <CountUp end={10} start={0} duration={5} delay={0} suffix="k+" />
+            <span className="font-bold text-2xl md:text-3xl lg:text-4xl text-textColorYellow">
+              <CountUp
+                end={90000}
+                start={95500}
+                duration={5}
+                delay={0}
+                suffix="+"
+              />
             </span>
             <span className="lg:text-xl">Costumers</span>
           </div>
