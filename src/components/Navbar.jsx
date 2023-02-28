@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import logo from "../img/logo.png";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
 
@@ -9,7 +9,9 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="#">
-              <h2 className="text-2xl font-bold">LOGO</h2>
+              <h2 className="w-32 font-bold">
+                <img src={logo} alt="logo" />
+              </h2>
             </a>
             <div className="md:hidden">
               <button
