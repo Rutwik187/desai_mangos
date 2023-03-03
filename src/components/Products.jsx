@@ -52,7 +52,7 @@ const Products = () => {
           {productData.map((item, index) => (
             <div
               key={index}
-              className="min-w-250 h-[175px]  md:w-300   bg-cardOverlay rounded-lg py-2 px-4  my-6  backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative"
+              className="min-w-250 h-[175px]  md:w-300   bg-cardOverlay rounded-lg py-2 px-4  my-6  backdrop-blur-lg hover:drop-shadow-lg flex flex-col items-center justify-evenly relative shadow-2xl"
             >
               <div className="w-full flex items-center justify-between">
                 <motion.div

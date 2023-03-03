@@ -1,9 +1,13 @@
-// import Banners from "./components/banners";
+import Banner from "./components/Banner";
+import ContactUs from "./components/ContactUs";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import HomeContainer from "./components/HomeContainer";
 import HomeProducts from "./components/HomeProducts";
 import Navbar from "./components/Navbar";
 import Products from "./components/Products";
+import ProductsDesc from "./components/ProductsDesc";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -13,8 +17,12 @@ function App() {
       <HomeContainer />
       <Features />
       {/* <Products /> */}
-      {/* <Banners /> */}
       <HomeProducts />
+      <Banner />
+      {/* <ProductsDesc /> */}
+      <Testimonials />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }

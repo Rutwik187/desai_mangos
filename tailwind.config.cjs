@@ -5,6 +5,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "*"],
   theme: {
     extend: {
+      backgroundImage: {
+        'banner-img': "url('./src/img/bannerImg-1.png')",
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
       width: {
         150: "150px",
         190: "190px",
