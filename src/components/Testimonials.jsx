@@ -33,7 +33,7 @@ const Testimonials = () => {
             <Slide index={0} tabIndex="null">
               <div className="flex">
                 <div className="mt-14 md:flex">
-                  <div className="relative lg:w-1/2 sm:w-96 xl:h-96 h-80">
+                  <div className="relative lg:w-1/2 sm:w-96 xl:h-96 h-60">
                     <img
                       src={amitabhBachchan}
                       alt="image of profile"
@@ -78,7 +78,7 @@ const Testimonials = () => {
                 style={{ transform: "translateX(0%)" }}
               >
                 <div className="mt-14 md:flex">
-                  <div className="relative lg:w-1/2 sm:w-96 xl:h-96 h-80">
+                  <div className="relative lg:w-1/2 sm:w-96 xl:h-96 h-60">
                     <img
                       src={nitinGadkari}
                       alt="image of profile"
