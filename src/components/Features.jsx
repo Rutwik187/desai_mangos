@@ -4,7 +4,7 @@ import { featuresData } from "../data";
 const Features = () => {
   return (
     <div className="w-auto m-5 md:m-12 flex flex-col md:gap-0 ">
-      <p className="text-2xl font-semibold capitalize text-headingColor relative before:absolute before:rounded-lg before:content before:w-32 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-yellow-200 to-yellow-400 transition-all ease-in-out duration-100">
+      <p className="xl:text-4xl text-3xl font-semibold capitalize text-headingColor relative before:absolute before:rounded-lg before:content before:w-32 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-yellow-200 to-yellow-400 transition-all ease-in-out duration-100">
         Why Choose Us
       </p>
       <div className="flex md:flex-row flex-col justify-center items-center gap-y-12 md:gap-x-14 lg:gap-x-24  m-10">

@@ -12,25 +12,25 @@ import feature4 from "./img/feature4.png"
 export const heroData = [
     {
         id: 1,
-        name: "Alphanso",
+        name: "Devgad",
         price: "200",
         imageSrc: mango1,
     },
+    // {
+    //     id: 2,
+    //     name: "Kesar",
+    //     price: "250",
+    //     imageSrc: mango2,
+    // },
     {
         id: 2,
-        name: "Kesar",
-        price: "250",
-        imageSrc: mango2,
-    },
-    {
-        id: 3,
-        name: "Bangalpani",
+        name: "Ratnagari",
         price: "300",
         imageSrc: mango3,
     },
     {
-        id: 4,
-        name: "Bangalpani",
+        id: 3,
+        name: "Pawas",
         price: "300",
         imageSrc: mango5,
     },
@@ -61,82 +61,24 @@ export const featuresData = [
 
 export const productData = [
     {
-        title: "Alphanso",
+        title: "Devgad",
         price: "200",
         img: mango1,
+        linkTo: "/devgad"
     },
+
     {
-        title: "Kesar",
-        price: "250",
-        img: mango2,
-    },
-    {
-        title: "Bangalpani",
+        title: "Ratnagari",
         price: "300",
         img: mango3,
+        linkTo: "/ratnagari"
     },
     {
-        title: "Bangalpani",
+        title: "Pawas",
         price: "300",
         img: mango5,
+        linkTo: "/pawas"
     },
-    {
-        title: "Alphanso",
-        price: "200",
-        img: mango1,
-    },
-    {
-        title: "Kesar",
-        price: "250",
-        img: mango2,
-    },
-    {
-        title: "Bangalpani",
-        price: "300",
-        img: mango3,
-    },
-    {
-        title: "Bangalpani",
-        price: "300",
-        img: mango5,
-    },
+
 ]
 
-export const categories = [
-    {
-        id: 1,
-        name: "Chicken",
-        urlParamName: "chicken",
-    },
-    {
-        id: 2,
-        name: "Curry",
-        urlParamName: "curry",
-    },
-    {
-        id: 3,
-        name: "Rice",
-        urlParamName: "rice",
-    },
-    {
-        id: 4,
-        name: "Fish",
-        urlParamName: "fish",
-    },
-    {
-        id: 5,
-        name: "Fruits",
-        urlParamName: "fruits",
-    },
-    {
-        id: 6,
-        name: "Icecreams",
-        urlParamName: "icecreams",
-    },
-
-    {
-        id: 7,
-        name: "Soft Drinks",
-        urlParamName: "drinks",
-    },
-];

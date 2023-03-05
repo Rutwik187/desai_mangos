@@ -1,30 +1,32 @@
-import Banner from "./components/Banner";
-import ContactUs from "./components/ContactUs";
-import Features from "./components/Features";
 import Footer from "./components/Footer";
-import HomeContainer from "./components/HomeContainer";
-import HomeProducts from "./components/HomeProducts";
+
 import Navbar from "./components/Navbar";
-import Products from "./components/Products";
-import ProductsDesc from "./components/ProductsDesc";
-import Testimonials from "./components/Testimonials";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import AboutUs from "./pages/AboutUs";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Ratnagari from "./pages/products/Ratnagari";
+import Devgad from "./pages/products/Devgad";
+import Pawas from "./pages/products/Pawas";
+import ScrollToTop from "./scrollToTop";
 
-function App() {
+const App = () => {
   return (
-    <div className="w-screen h-auto flex flex-col bg-primary">
+    <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
-
-      <HomeContainer />
-      <Features />
-      {/* <Products /> */}
-      <HomeProducts />
-      <Banner />
-      {/* <ProductsDesc /> */}
-      <Testimonials />
-      <ContactUs />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+      </Routes>
+      <Routes>
+        <Route path="/ratnagari" element={<Ratnagari />} />
+        <Route path="/devgad" element={<Devgad />} />
+        <Route path="/pawas" element={<Pawas />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

@@ -2,10 +2,12 @@ import React from "react";
 import { productData } from "../data";
 import { motion } from "framer-motion";
 
+import { Link } from "react-router-dom";
+
 const HomeProducts = () => {
   return (
     <div className="w-auto m-5 md:m-12 flex flex-col md:gap-0 ">
-      <p className="text-2xl font-semibold capitalize text-headingColor relative before:absolute before:rounded-lg before:content before:w-32 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-yellow-200 to-yellow-400 transition-all ease-in-out duration-100">
+      <p className="xl:text-4xl text-3xl font-semibold capitalize text-headingColor relative before:absolute before:rounded-lg before:content before:w-32 before:h-1 before:-bottom-2 before:left-0 before:bg-gradient-to-tr from-yellow-200 to-yellow-400 transition-all ease-in-out duration-100">
         Our Product Range
       </p>
       <div className=" flex flex-wrap justify-center items-center  md:gap-x-14 lg:gap-x-24  m-10">
@@ -34,12 +36,14 @@ const HomeProducts = () => {
               {item.price}
             </p>
 
-            <button
-              type="button"
-              className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2"
-            >
-              Buy Now
-            </button>
+            <Link to={item.linkTo}>
+              <button
+                type="button"
+                className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 mr-2 mb-2"
+              >
+                Buy Now
+              </button>
+            </Link>
           </div>
         ))}
       </div>
