@@ -4,7 +4,7 @@ import logo from "../img/logo.png";
 const Footer = () => {
   return (
     <footer aria-label="Site Footer">
-      <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
+      <div class="mx-auto max-w-screen-xl px-4  pb-6 sm:px-6 lg:px-8 ">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <img
@@ -96,27 +96,27 @@ const Footer = () => {
                   <li>
                     <a
                       class="text-gray-700 transition hover:text-gray-700/75"
-                      href="/"
+                      href="https://maps.app.goo.gl/5iB4Ynm586vzPGbK9?g_st=iw"
                     >
-                      Shanipar
+                      Shanipar Chawk, MG Road.
                     </a>
                   </li>
 
                   <li>
                     <a
                       class="text-gray-700 transition hover:text-gray-700/75"
-                      href="/"
+                      href="https://maps.app.goo.gl/wRpP7gBZeLKvWs36A?g_st=iw"
                     >
-                      Karve Road
+                      Karve Road, Kothrud
                     </a>
                   </li>
 
                   <li>
                     <a
                       class="text-gray-700 transition hover:text-gray-700/75"
-                      href="/"
+                      href="https://maps.app.goo.gl/nbBxobS7EB9HEHRj9?g_st=iw"
                     >
-                      Baner
+                      Veerbhadra Nagar, Baner
                     </a>
                   </li>
                 </ul>
@@ -275,7 +275,7 @@ const Footer = () => {
                 href="https://www.priyamit.co.in/home"
               >
                 {"   "}
-                Prima IT Services
+                Priyam IT Services Private Limited
               </a>
             </p>
 

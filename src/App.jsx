@@ -9,6 +9,7 @@ import Ratnagari from "./pages/products/Ratnagari";
 import Devgad from "./pages/products/Devgad";
 import Pawas from "./pages/products/Pawas";
 import ScrollToTop from "./scrollToTop";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/why-us" element={<WhyChooseUs />} />
       </Routes>
       <Routes>
         <Route path="/ratnagari" element={<Ratnagari />} />
