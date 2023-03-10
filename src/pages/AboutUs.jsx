@@ -1,4 +1,6 @@
 import WhyChooseUs from "../components/WhyChooseUs";
+import shop from "../img/shop.jpeg";
+import mango from "../img/service1.jpeg";
 
 const AboutUs = () => {
   return (
@@ -13,41 +15,42 @@ const AboutUs = () => {
         mangoes to our customers.
       </p>
 
-      <section className="bg-white dark:bg-gray-900 my-12 md:my-24 ">
-        <div className="gap-16 items-center   max-w-screen-xl lg:grid lg:grid-cols-2 ">
-          <div className="mb-6 text-lg font-normal text-gray-500 lg:text-xl ">
-            <h2 className="mb-4 text-2xl md:text-3xl lg:text-4xl  tracking-tight font-semibold text-gray-900 ">
-              Services
-            </h2>
-            <p className="mb-4">
-              At Desai Bandhu Ambewale, we have 400-acre farms in Ratnagiri,
-              Devgad, and Pawas, where we grow our mangoes using organic and
-              sustainable farming practices. We are GI-certified and take great
-              care to ensure that our mangoes are free from harmful chemicals
-              and are naturally ripened. Our mission is to provide our customers
-              with the authentic and natural taste of mangoes.
-            </p>
-            <p>
-              We believe in sustainable farming practices and taking care of our
-              environment. We are committed to providing the best quality and
-              naturally ripened mangoes to our customers, whether they are in
-              India or anywhere in the world.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-4 mt-8">
-            <img
-              className="w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
-              alt="office content 1"
-            />
-            <img
-              className="mt-4 w-full lg:mt-10 rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
-              alt="office content 2"
-            />
+      <div className="py-8">
+        <div className="container m-auto ">
+          <div className="lg:flex flex-row-reverse justify-between items-center gap-12">
+            <div className="lg:w-3/4 ">
+              <h1 className="mb-4 font-semibold leading-none tracking-tight text-gray-900 text-2xl md:text-3xl lg:text-4xl ">
+                Services
+              </h1>
+              <p className="mb-6 text-lg font-normal text-gray-500 lg:text-xl ">
+                At Desai Bandhu Ambewale, we have 400-acre farms in Ratnagiri,
+                Devgad, and Pawas, where we grow our mangoes using organic and
+                sustainable farming practices. We are GI-certified and take
+                great care to ensure that our mangoes are free from harmful
+                chemicals and are naturally ripened. Our mission is to provide
+                our customers with the authentic and natural taste of mangoes.
+              </p>
+              <p>
+                We believe in sustainable farming practices and taking care of
+                our environment. We are committed to providing the best quality
+                and naturally ripened mangoes to our customers, whether they are
+                in India or anywhere in the world.
+              </p>
+            </div>
+            <div className="lg:w-1/4 order-2">
+              <img
+                src={mango}
+                // style={{
+                //   transform:
+                //     "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)",
+                // }}
+                alt=""
+                className="rounded"
+              />
+            </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Company Background */}
       <div className="py-8">
@@ -74,11 +77,11 @@ const AboutUs = () => {
             </div>
             <div className="lg:w-5/12 order-2">
               <img
-                src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
-                style={{
-                  transform:
-                    "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)",
-                }}
+                src={shop}
+                // style={{
+                //   transform:
+                //     "scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg)",
+                // }}
                 alt=""
                 className="rounded"
               />

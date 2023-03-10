@@ -3,10 +3,12 @@ import ZoomGallery from "./ZoomGallery";
 import rajThakre from "../img/raj-thakre.jpeg";
 import amitabhBacchan from "../img/amitabhBachan.jpeg";
 import dhoni from "../img/dhoni.jpeg";
+import ImagesSlider from "./ImagesSlider";
+import SocialWorkSlider from "./SocialworkSlider";
 
 const Gallery = () => {
   return (
-    <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] md:mx-24 mx-6">
+    <section class="overflow-hidden pt-20 pb-12 lg:pt-[60px] lg:pb-[90px] md:mx-24 mx-6">
       <div class="container mx-auto">
         <div class="-mx-4 flex flex-wrap items-center justify-between">
           <div class="w-full px-4 lg:w-6/12">
@@ -32,23 +34,32 @@ const Gallery = () => {
                 Some of our celebrity customers
               </span>
               <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-                Make your customers happy by giving our Mangos.
+                We make our costumers happy
               </h2>
               <p class="text-body-color mb-8 text-base">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less.
+                Our commitment to excellence has allowed us to grow and expand
+                over the years, and we are proud to offer our products to
+                customers across the country. One of our proudest moments was
+                when we had the opportunity to meet and gift a basket of our
+                finest mangoes to some of the very legendary personalities.
               </p>
               <p class="text-body-color mb-12 text-base">
-                A domain name is one of the first steps to establishing your
-                brand. Secure a consistent brand image with a domain name that
-                matches your business.
+                Few of them are Amitabh Bachchan, M.S Dhoni, Raj Thakery, Nitin
+                Gadkari, Devendra Fadnavis, Chandrakant Patil...
+              </p>
+              <p class="text-body-color mb-12 text-base">
+                We are also glad to receive apprication letters form Prime
+                Minister Indira Gandhi, Amitabh Bachchan, Road and Transport
+                Department, Government of Maharashtra...
               </p>
             </div>
           </div>
         </div>
       </div>
+
       <ZoomGallery />
+      <ImagesSlider />
+      <SocialWorkSlider />
     </section>
   );
 };
