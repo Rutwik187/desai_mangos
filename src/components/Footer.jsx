@@ -98,7 +98,7 @@ const Footer = () => {
                       class="text-gray-700 transition hover:text-gray-700/75"
                       href="https://maps.app.goo.gl/5iB4Ynm586vzPGbK9?g_st=iw"
                     >
-                      Shanipar Chawk, MG Road.
+                      Shanipar Chawk, Bajirao Road.
                     </a>
                   </li>
 

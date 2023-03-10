@@ -1,3 +1,5 @@
+import WhyChooseUs from "../components/WhyChooseUs";
+
 const AboutUs = () => {
   return (
     <div className="m-6 md:m-12 xl:m-20">
@@ -84,6 +86,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <WhyChooseUs />
     </div>
   );
 };

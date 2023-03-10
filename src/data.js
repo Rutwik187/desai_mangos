@@ -9,6 +9,10 @@ import feature2 from "./img/feature2.png"
 import feature3 from "./img/feature3.png"
 import feature4 from "./img/feature4.png"
 
+import appricationLetter1 from "./img/appricationLetter1.jpeg"
+import appricationLetter2 from "./img/appricationLetter2.jpeg"
+import appricationLetter3 from "./img/appricationLetter3.jpeg"
+
 export const heroData = [
     {
         id: 1,
@@ -82,3 +86,8 @@ export const productData = [
 
 ]
 
+export const galleryImages = [
+    { id: 1, url: appricationLetter1, alt: "Image 1" },
+    { id: 2, url: appricationLetter2, alt: "Image 2" },
+    { id: 3, url: appricationLetter3, alt: "Image 3" },
+];

@@ -9,8 +9,8 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 import invertedCommas from "../img/inverted-commas.svg";
-import amitabhBachchan from "../img/AmitabhBachchan.jpg";
-import nitinGadkari from "../img/nitinGadkari.jpg";
+import amitabhBachchan from "../img/amitabhBachan.jpeg";
+import nitinGadkari from "../img/gadkari.jpeg";
 
 const Testimonials = () => {
   return (
@@ -37,7 +37,7 @@ const Testimonials = () => {
                     <img
                       src={amitabhBachchan}
                       alt="image of profile"
-                      className="w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded"
+                      className="w-full h-full flex-shrink-0 object-fit object-top object-cover shadow-lg rounded"
                     />
                     <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-orange-50 rounded-full">
                       <img
@@ -82,7 +82,7 @@ const Testimonials = () => {
                     <img
                       src={nitinGadkari}
                       alt="image of profile"
-                      className="w-full h-full flex-shrink-0 object-fit object-cover shadow-lg rounded"
+                      className="w-full h-full flex-shrink-0 object-fit object-top object-cover shadow-lg rounded"
                     />
                     <div className="w-32 md:flex hidden items-center justify-center absolute top-0 -mr-16 -mt-14 right-0 h-32 bg-orange-50 rounded-full">
                       <img

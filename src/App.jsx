@@ -10,6 +10,7 @@ import Devgad from "./pages/products/Devgad";
 import Pawas from "./pages/products/Pawas";
 import ScrollToTop from "./scrollToTop";
 import WhyChooseUs from "./components/WhyChooseUs";
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route exact path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/why-us" element={<WhyChooseUs />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Routes>
         <Route path="/ratnagari" element={<Ratnagari />} />

@@ -1,12 +1,13 @@
 import React from "react";
+import bannerImg from "../img/bannerImg.jpg";
 
 const WhyChooseUs = () => {
   return (
     <div class="container my-24 px-6 mx-auto">
       <section class="mb-32 text-gray-800">
-        <h2 class="text-3xl font-bold mb-12 text-center">
-          Projects we are proud of
-        </h2>
+        <h1 className="mb-4 font-semibold leading-none tracking-tight text-gray-900 text-2xl md:text-3xl lg:text-4xl ">
+          Why Choose Us
+        </h1>
 
         <div class="flex flex-wrap items-center">
           <div class="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0 md:px-6">
@@ -16,10 +17,7 @@ const WhyChooseUs = () => {
               data-mdb-ripple-color="light"
               style={{ backgroundPosition: "50%" }}
             >
-              <img
-                src="https://mdbootstrap.com/img/new/textures/full/126.jpg"
-                class="w-full"
-              />
+              <img src={bannerImg} class="w-full" />
               <a href="#!">
                 <div
                   class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
@@ -33,7 +31,6 @@ const WhyChooseUs = () => {
                 </div>
               </a>
             </div>
-            hsl
           </div>
 
           <div class="grow-0 shrink-0 basis-auto w-full lg:w-7/12 md:px-6">
@@ -41,7 +38,7 @@ const WhyChooseUs = () => {
               <div class="shrink-0">
                 <div
                   class="p-4 rounded-md shadow-lg"
-                  style={{ backgroundColor: "hsl(231, 52.6%, 20%)" }}
+                  style={{ backgroundColor: "#FCA61F" }}
                 >
                   <svg
                     class="w-5 h-5 text-white"
@@ -56,11 +53,11 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div class="grow ml-4">
-                <p class="font-bold mb-1">Support 24/7</p>
+                <p class="font-bold mb-1"> Intact since 1932: </p>
                 <p class="text-gray-500">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Nihil quisquam quibusdam modi sapiente magni molestias
-                  pariatur facilis reprehenderit facere aliquam ex.
+                  We are in service since 1932, which is still going strong, is
+                  a testimonial to the excellence of our products and the
+                  confidence our clients have in us.
                 </p>
               </div>
             </div>
@@ -69,7 +66,7 @@ const WhyChooseUs = () => {
               <div class="shrink-0">
                 <div
                   class="p-4 rounded-md shadow-lg"
-                  style={{ backgroundColor: "hsl(231, 52.6%, 20%)" }}
+                  style={{ backgroundColor: "#FCA61F" }}
                 >
                   <svg
                     class="w-5 h-5 text-white"
@@ -84,11 +81,11 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div class="grow ml-4">
-                <p class="font-bold mb-1">Safe and solid</p>
+                <p class="font-bold mb-1">Sustainable agricultural methods</p>
                 <p class="text-gray-500">
-                  Eum nostrum fugit numquam, voluptates veniam neque quibusdam
-                  ullam aspernatur odio soluta, quisquam dolore animi mollitia a
-                  omnis praesentium, expedita nobis!
+                  We adhere to sustainable agricultural methods and take great
+                  effort to ensure that our mangoes are free of damaging
+                  pesticides and chemicals.
                 </p>
               </div>
             </div>
@@ -97,7 +94,7 @@ const WhyChooseUs = () => {
               <div class="shrink-0">
                 <div
                   class="p-4 rounded-md shadow-lg"
-                  style={{ backgroundColor: "hsl(231, 52.6%, 20%)" }}
+                  style={{ backgroundColor: "#FCA61F" }}
                 >
                   <svg
                     class="w-5 h-5 text-white"
@@ -112,20 +109,20 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div class="grow ml-4">
-                <p class="font-bold mb-1">Extremely fast</p>
+                <p class="font-bold mb-1">GI certification</p>
                 <p class="text-gray-500">
-                  Enim cupiditate, minus nulla dolor cumque iure eveniet facere
-                  ullam beatae hic voluptatibus dolores exercitationem? Facilis
-                  debitis aspernatur amet nisi iure eveniet facere?
+                  . We hold GI certification, which indicates that our mangoes
+                  are grown in particular areas and have distinctive qualities
+                  that set them apart from other types.
                 </p>
               </div>
             </div>
 
-            <div class="flex">
+            <div class="flex mb-12">
               <div class="shrink-0">
                 <div
                   class="p-4 rounded-md shadow-lg"
-                  style={{ backgroundColor: "hsl(231, 52.6%, 20%)" }}
+                  style={{ backgroundColor: "#FCA61F" }}
                 >
                   <svg
                     class="w-5 h-5 text-white"
@@ -140,11 +137,96 @@ const WhyChooseUs = () => {
                 </div>
               </div>
               <div class="grow ml-4">
-                <p class="font-bold mb-1">Live analytics</p>
+                <p class="font-bold mb-1">Vast selection of mango varieties</p>
                 <p class="text-gray-500">
-                  Illum doloremque ea, blanditiis sed dolor laborum praesentium
-                  maxime sint, consectetur atque ipsum ab adipisci ullam
-                  aspernatur odio soluta, quisquam dolore
+                  We have three types of mangoes - Devgad, Ratnagiri, and Pawas
+                  - and our specialty is the Amrut Pairi kind. There is
+                  something here for every taste.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex mb-12">
+              <div class="shrink-0">
+                <div
+                  class="p-4 rounded-md shadow-lg"
+                  style={{ backgroundColor: "#FCA61F" }}
+                >
+                  <svg
+                    class="w-5 h-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 544 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="grow ml-4">
+                <p class="font-bold mb-1">Farm-to-table philosophy: </p>
+                <p class="text-gray-500">
+                  We take great effort to make sure that our mangoes are brought
+                  straight from our gardens to your table, making sure that you
+                  only get the freshest and most flavourful produce.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex mb-12">
+              <div class="shrink-0">
+                <div
+                  class="p-4 rounded-md shadow-lg"
+                  style={{ backgroundColor: "#FCA61F" }}
+                >
+                  <svg
+                    class="w-5 h-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 544 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="grow ml-4">
+                <p class="font-bold mb-1">Online ordering :</p>
+                <p class="text-gray-500">
+                  We provide online ordering and global delivery so that our
+                  customers can take advantage of the sweetness of nature
+                  whenever it's convenient for them.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex mb-12">
+              <div class="shrink-0">
+                <div
+                  class="p-4 rounded-md shadow-lg"
+                  style={{ backgroundColor: "#FCA61F" }}
+                >
+                  <svg
+                    class="w-5 h-5 text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 544 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M527.79 288H290.5l158.03 158.03c6.04 6.04 15.98 6.53 22.19.68 38.7-36.46 65.32-85.61 73.13-140.86 1.34-9.46-6.51-17.85-16.06-17.85zm-15.83-64.8C503.72 103.74 408.26 8.28 288.8.04 279.68-.59 272 7.1 272 16.24V240h223.77c9.14 0 16.82-7.68 16.19-16.8zM224 288V50.71c0-9.55-8.39-17.4-17.84-16.06C86.99 51.49-4.1 155.6.14 280.37 4.5 408.51 114.83 513.59 243.03 511.98c50.4-.63 96.97-16.87 135.26-44.03 7.9-5.6 8.42-17.23 1.57-24.08L224 288z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="grow ml-4">
+                <p class="font-bold mb-1">Customer service: </p>
+                <p class="text-gray-500">
+                  We take great pleasure in providing excellent customer service
+                  and are dedicated to making sure that every interaction with
+                  us is positive for our clients. Our helpful and educated team
+                  is always available to answer your questions.
                 </p>
               </div>
             </div>
