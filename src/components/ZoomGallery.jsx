@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import galleryImages from "../data/"
 import { galleryImages } from "../data";
 
-const ZoomingGallery = () => {
+const ZoomGallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleClick = (image) => {
@@ -73,4 +73,4 @@ const ZoomingGallery = () => {
   );
 };
 
-export default ZoomingGallery;
+export default ZoomGallery;

@@ -1,5 +1,5 @@
 import React from "react";
-import ZoomingGallery from "./ZoomingGallery";
+import ZoomGallery from "./ZoomGallery";
 import rajThakre from "../img/raj-thakre.jpeg";
 import amitabhBacchan from "../img/amitabhBachan.jpeg";
 import dhoni from "../img/dhoni.jpeg";
@@ -48,7 +48,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <ZoomingGallery />
+      <ZoomGallery />
     </section>
   );
 };
