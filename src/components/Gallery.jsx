@@ -1,5 +1,5 @@
 import React from "react";
-import ZoomingGallery from "./zoomingGallery";
+import ZoomingGallery from "./ZoomingGallery";
 import rajThakre from "../img/raj-thakre.jpeg";
 import amitabhBacchan from "../img/amitabhBachan.jpeg";
 import dhoni from "../img/dhoni.jpeg";
