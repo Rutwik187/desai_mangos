@@ -4,7 +4,7 @@ import rajThakre from "../img/raj-thakre.jpeg";
 import amitabhBacchan from "../img/amitabhBachan.jpeg";
 import dhoni from "../img/dhoni.jpeg";
 import ImagesSlider from "./ImagesSlider";
-import SocialWorkSlider from "./SocialworkSlider";
+import SocialWorkSlider from "./SocialWorkSlider";
 
 const Gallery = () => {
   return (
