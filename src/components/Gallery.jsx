@@ -5,6 +5,7 @@ import amitabhBacchan from "../img/amitabhBachan.jpeg";
 import dhoni from "../img/dhoni.jpeg";
 import ImagesSlider from "./ImagesSlider";
 import SocialWorkSlider from "./SocialWorkSlider";
+import Instagram from "./Instagram";
 
 const Gallery = () => {
   return (
@@ -72,6 +73,7 @@ const Gallery = () => {
       <ZoomGallery />
       <ImagesSlider />
       <SocialWorkSlider />
+      <Instagram />
     </section>
   );
 };
