@@ -20,23 +20,35 @@ const Pawas = () => {
             </h1>
 
             <p className="leading-relaxed my-4">
-              Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-              sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo
-              juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-              seitan poutine tumeric. Gastropub blue bottle austin listicle
-              pour-over, neutra jean shorts keytar banjo tattooed umami
-              cardigan.
+              Try the rare and special variety of Pawas mangoes, grown
+              exclusively in the coastal region of Maharashtra. Handpicked for
+              maximum freshness and flavor, Pawas mangoes are known for their
+              distinct aroma, rich flavor, and juicy texture. Grown sustainably
+              and without harmful chemicals, we take pride in providing you with
+              only the best quality Pawas mangoes. Choose from our selection of
+              Pawas mangoes for snacking, refreshing beverages, or your favorite
+              recipes. Taste the authentic and natural flavor of these mangoes
+              and enjoy the sweetness of nature at its best!
             </p>
 
-            <div className="flex justify-between items-center">
-              <span className="title-font font-medium text-2xl text-gray-900">
-                ₹500.00
-              </span>
+            <div className="flex flex-wrap gap-4 items-center">
               <button
                 type="button"
                 className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50  dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 ml-4 p-3 font-medium rounded-lg text-sm ppy-2 px-6 text-center inline-flex items-center justify-center"
               >
-                Buy Now
+                Buy Now at Baner
+              </button>
+              <button
+                type="button"
+                className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50  dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 ml-4 p-3 font-medium rounded-lg text-sm ppy-2 px-6 text-center inline-flex items-center justify-center"
+              >
+                Buy Now at Karve Road
+              </button>
+              <button
+                type="button"
+                className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50  dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 ml-4 p-3 font-medium rounded-lg text-sm ppy-2 px-6 text-center inline-flex items-center justify-center"
+              >
+                Buy Now at Shanipar
               </button>
             </div>
           </div>

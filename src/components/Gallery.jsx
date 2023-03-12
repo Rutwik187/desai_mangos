@@ -15,15 +15,27 @@ const Gallery = () => {
             <div class="-mx-3 flex items-center sm:-mx-4">
               <div class="w-full px-3 sm:px-4 xl:w-1/2">
                 <div class="py-3 sm:py-4">
-                  <img src={rajThakre} alt="" class="w-full rounded-2xl" />
+                  <img
+                    src={rajThakre}
+                    alt=""
+                    class="w-full rounded-2xl float-animation shadow-lg"
+                  />
                 </div>
                 <div class="py-3 sm:py-4">
-                  <img src={dhoni} alt="" class="w-full rounded-2xl" />
+                  <img
+                    src={dhoni}
+                    alt=""
+                    class="w-full rounded-2xl float-animation shadow-lg"
+                  />
                 </div>
               </div>
               <div class="w-full px-3 sm:px-4 xl:w-1/2">
-                <div class="relative z-10 my-4">
-                  <img src={amitabhBacchan} alt="" class="w-full rounded-2xl" />
+                <div class="relative z-10 my-4 ">
+                  <img
+                    src={amitabhBacchan}
+                    alt=""
+                    class="w-full rounded-2xl float-animation shadow-lg"
+                  />
                 </div>
               </div>
             </div>

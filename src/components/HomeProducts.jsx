@@ -31,10 +31,10 @@ const HomeProducts = () => {
               {item?.title}
             </p>
 
-            <p className="text-lg text-headingColor font-semibold">
+            {/* <p className="text-lg text-headingColor font-semibold">
               <span className="text-sm text-textColorYellow">₹</span>{" "}
               {item.price}
-            </p>
+            </p> */}
 
             <Link to={item.linkTo}>
               <button

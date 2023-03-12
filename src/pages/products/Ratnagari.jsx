@@ -20,23 +20,34 @@ const Ratnagari = () => {
             </h1>
 
             <p className="leading-relaxed my-4">
-              Fam locavore kickstarter distillery. Mixtape chillwave tumeric
-              sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo
-              juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
-              seitan poutine tumeric. Gastropub blue bottle austin listicle
-              pour-over, neutra jean shorts keytar banjo tattooed umami
-              cardigan.
+              We offer you the opportunity to taste the best quality Ratnagiri
+              mangoes, grown in the Konkan region of Maharashtra. Handpicked
+              with care, our mangoes are fresh, flavorful, and famous for their
+              sweet, rich flavor, soft, juicy texture, and beautiful
+              golden-yellow color. Grown sustainably and without harmful
+              chemicals, our mangoes are a representation of the rich culture
+              and tradition of Maharashtra. Come explore our website and taste
+              the sweetness of nature at its best!
             </p>
 
-            <div className="flex justify-between items-center">
-              <span className="title-font font-medium text-2xl text-gray-900">
-                ₹500.00
-              </span>
+            <div className="flex flex-wrap gap-4 items-center">
               <button
                 type="button"
                 className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50  dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 ml-4 p-3 font-medium rounded-lg text-sm ppy-2 px-6 text-center inline-flex items-center justify-center"
               >
-                Buy Now
+                Buy Now at Baner
+              </button>
+              <button
+                type="button"
+                className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50  dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 ml-4 p-3 font-medium rounded-lg text-sm ppy-2 px-6 text-center inline-flex items-center justify-center"
+              >
+                Buy Now at Karve Road
+              </button>
+              <button
+                type="button"
+                className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50  dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 ml-4 p-3 font-medium rounded-lg text-sm ppy-2 px-6 text-center inline-flex items-center justify-center"
+              >
+                Buy Now at Shanipar
               </button>
             </div>
           </div>

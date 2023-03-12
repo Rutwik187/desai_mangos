@@ -94,9 +94,9 @@ const HomeContainer = () => {
                   {n.name}
                 </p>
 
-                <p className="text-sm font-semibold text-headingColor">
+                {/* <p className="text-sm font-semibold text-headingColor">
                   <span className="text-xs text-red-600">₹</span> {n.price}
-                </p>
+                </p> */}
               </div>
             ))}
         </div>

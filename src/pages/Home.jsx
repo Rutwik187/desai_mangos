@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import ContactUs from "../components/ContactUs";
+import CustomerReviews from "../components/CustomerReviews";
 import Features from "../components/Features";
 import HomeContainer from "../components/HomeContainer";
 import HomeProducts from "../components/HomeProducts";
@@ -16,6 +17,7 @@ function Home() {
       <Banner />
       <LifeCycle />
       <Testimonials />
+      <CustomerReviews />
       <ContactUs />
     </div>
   );
