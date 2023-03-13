@@ -1,140 +1,196 @@
 import { useState } from "react";
 import logo from "../img/logo.png";
 import { Link } from "react-router-dom";
+
+import React, { Fragment, lazy } from "react";
+import { Menu, Transition } from "@headlessui/react";
+import NavbarDropdown from "./NavbarDropdown";
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  strokeWidth={1.5}
+  stroke="currentColor"
+  className="w-6 h-6"
+>
+  <path
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+  />
+</svg>;
+
 export default function Navbar() {
   return (
-    <nav class="p-4 bg-white border-gray-200 ">
-      <div class="container flex flex-wrap items-center justify-between mx-auto">
-        <a href="#" class="flex items-center">
-          <img src={logo} class="h-8 mr-3 sm:h-10" alt=" Logo" />
-        </a>
-        <button
-          data-collapse-toggle="navbar-dropdown"
-          type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
-          aria-controls="navbar-dropdown"
-          aria-expanded="false"
-        >
-          <span class="sr-only">Open main menu</span>
-          <svg
-            class="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium xl:text-lg md:border-0 md:bg-white ">
-            <li>
-              <Link
-                to="/"
-                class="block py-2 pl-3 pr-4 text-white bg-textColorYellow rounded md:bg-transparent md:text-textColorYellow md:p-0 "
-                aria-current="page"
+    <div className="relative z-10">
+      <div className="mx-auto w-[95%]">
+        <div className="relative">
+          <Menu>
+            <div className="relative py-4">
+              <nav
+                className="relative flex items-center justify-between"
+                aria-label="Global"
               >
-                Home
-              </Link>
-            </li>
-            <li>
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColorYellow md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-              >
-                Buy Now{" "}
-                <svg
-                  class="w-5 h-5 ml-1"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-              {/* <!-- Dropdown menu --> */}
-              <div
-                id="dropdownNavbar"
-                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
-              >
-                <ul
-                  class="py-2 text-base text-gray-700 dark:text-gray-400"
-                  aria-labelledby="dropdownLargeButton"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Baner
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      Shanipar
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                    >
-                      karve Road
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <Link
-                to="/about-us"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColorYellow md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColorYellow md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Products
-              </a>
-            </li>
+                <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
+                  <div className="flex w-full items-center justify-between md:w-auto">
+                    <Link to="/">
+                      <img
+                        className="h-8 mr-3 sm:h-10"
+                        src={logo}
+                        alt="Comapany logo"
+                      />
+                    </Link>
+                    <div className="flex items-center md:hidden">
+                      <Menu.Button className="inline-flex items-center justify-center rounded-md  p-2 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <span className="sr-only">Open main menu</span>
+                        <svg
+                          className="h-8 w-8"
+                          aria-hidden="true"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                          />
+                        </svg>
 
-            <li>
-              <Link
-                to="/gallery"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColorYellow md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Gallery
-              </Link>
-            </li>
+                        {/* <MenuIcon  /> */}
+                      </Menu.Button>
+                    </div>
+                  </div>
+                </div>
+                <div className="hidden  md:ml-10 md:flex md:flex-row md:items-center md:justify-between ">
+                  <div className="flex flex-row items-center space-x-8">
+                    <Link
+                      to="/"
+                      class="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0"
+                      aria-current="page"
+                    >
+                      Home
+                    </Link>
+                    <NavbarDropdown />
+                    <Link
+                      to="/about-us"
+                      class="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                      aria-current="page"
+                    >
+                      About-Us
+                    </Link>
 
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColorYellow md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact Us
-              </a>
-            </li>
-          </ul>
+                    <Link
+                      to="/gallery"
+                      class="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                      aria-current="page"
+                    >
+                      Gallery
+                    </Link>
+                    <Link
+                      to="/"
+                      class="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                      aria-current="page"
+                    >
+                      Contact-Us
+                    </Link>
+                    <Link
+                      to="/"
+                      className="bg-textColorYellow hover:bg-yellow-300 px-4 border border-yellow-700 block py-2 pl-3 pr-4 text-black  rounded "
+                      aria-current="page"
+                    >
+                      Buy Now
+                    </Link>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+            <Transition
+              as={Fragment}
+              enter="transition ease-in-out duration-300 transform"
+              enterFrom="translate-x-full"
+              enterTo="-translate-x-0"
+              leave="transition ease-in-out duration-300 transform"
+              leaveFrom="-translate-x-0"
+              leaveTo="translate-x-full"
+            >
+              <Menu.Items className="absolute top-0 right-0 w-[60%] md:hidden bg-white">
+                <div className="overflow-hidden rounded-l  shadow-md ring-1">
+                  <div className="flex items-center justify-between px-5 pt-4">
+                    <div>
+                      <img className="h-8 mr-3 sm:h-10" src={logo} alt="" />
+                    </div>
+                    <div className="-mr-2">
+                      <Menu.Button className="inline-flex items-center justify-center rounded-md p-2hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <span className="sr-only">Close main menu</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth={1.5}
+                          stroke="currentColor"
+                          className="h-8 w-8"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M6 18L18 6M6 6l12 12"
+                          />
+                        </svg>
+                      </Menu.Button>
+                    </div>
+                  </div>
+                  <div className="flex flex-col px-2 pt-2 pb-3">
+                    <div className="flex flex-col px-2 pt-2 pb-2 space-y-5">
+                      <Link
+                        to="/"
+                        class="block py-2 pl-3 pr-4 text-black  rounded  md:hover:text-textColorYellow md:p-0"
+                        aria-current="page"
+                      >
+                        Home
+                      </Link>
+                      <NavbarDropdown />
+                      <Link
+                        to="/about-us"
+                        class="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                        aria-current="page"
+                      >
+                        About-Us
+                      </Link>
+
+                      <Link
+                        to="/gallery"
+                        class="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                        aria-current="page"
+                      >
+                        Gallery
+                      </Link>
+                      <Link
+                        to="/"
+                        class="block py-2 pl-3 pr-4 text-black  rounded md:bg-transparent md:hover:text-textColorYellow md:p-0 "
+                        aria-current="page"
+                      >
+                        Contact-Us
+                      </Link>
+                      <Link
+                        to="/"
+                        class="bg-textColorYellow hover:bg-yellow-400 px-4 border border-yellow-700 block py-2 pl-3 pr-4 text-black  rounded  "
+                        aria-current="page"
+                      >
+                        Buy Now
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </Menu.Items>
+            </Transition>
+          </Menu>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
